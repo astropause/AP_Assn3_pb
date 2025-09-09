@@ -56,10 +56,15 @@ require([
 
   var view = new SceneView({
     container: "viewDiv",
+    // viewingMode: "local", 
+    /* Limits access to data on local drive, here it removes buildings from the map because  */
     map: scene,
     camera: camera
+
   });
 
+
+  
   var homeBtn = new Home({
     view: view
   });
